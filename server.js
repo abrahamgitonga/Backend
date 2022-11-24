@@ -1,15 +1,22 @@
-const sql = require('mssql')
+// const sql = require('mssql')
 const express = require('express')
-const {v4}= require('uuid')
+
 const app = express()
 //body parser
 app.use(express.json())
+app.use('/trainee',require('./routes'))
 app.listen(4000, ()=>{
   console.log('app is running')
    
 })
 
 
+
+
+
+
+
+//SQL DB CONNECTION
 
 // const dotenv =require('dotenv')
 // dotenv.config()
@@ -35,6 +42,12 @@ app.listen(4000, ()=>{
 // })
 
 // module.exports={sqlConfig}
+
+
+
+
+
+//IGNORE THIS PART
 
 // async () => {
 //  try {

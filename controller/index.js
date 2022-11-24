@@ -1,5 +1,5 @@
 //controleer holds the logic ..fucnctions
-
+const {v4}= require('uuid')
 const trainees=[
     {
       id: '0f8f06e4-8e30-446f-8797-f94a055cb25f',
@@ -10,7 +10,6 @@ const trainees=[
 
   ]
 
-    // all trainees
     const getTrainees =(req,res)=>{
         res.status(200).send(trainees)
 
